@@ -13,10 +13,8 @@
 - link:
     # add bins
     ~/bin/$: bin/$
-    # atom
-    ~/.atomrc: atom/atomrc
     # base16-shell
-    ~/.config/base16-shell: submodules/base16-shell
+    # ~/.config/base16-shell: submodules/base16-shell
     # bash
     ~/.bash_aliases: bash/bash_aliases
     ~/.bash_functions: bash/bash_functions
@@ -31,7 +29,7 @@
     ~/.gitconfig.local.template: git/gitconfig.local.template
     ~/.gitconfig: git/gitconfig
     # golang
-    ~/.golangrc: golang/golangrc
+    # ~/.golangrc: golang/golangrc
     # homebrew
     ~/.Brewfile: brew/Brewfile
     ~/.config/homebrew/config: brew/config
@@ -68,6 +66,8 @@
     ~/.tmux/yank.sh: tmux/yank.sh
     ~/.tmux/tmux.remote.conf: tmux/tmux.remote.conf
     ~/.tmux/tmux-theme.conf: tmux/base16-theme.conf
+    # vscode
+    # ~/.vscode: vscode/
     # zim
     ~/.local/zim: submodules/zimfw
     ~/.zimrc: zim/zimrc

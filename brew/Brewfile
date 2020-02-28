@@ -14,14 +14,11 @@ tap "homebrew/cask"
 tap "homebrew/cask-drivers"            # cask drivers
 tap "homebrew/cask-fonts"              # fonts  
 tap "homebrew/cask-versions"           # alternate versions of Casks
-tap "merikan/tools"                    # my personal tap
 
 ### ---------------------------------------------------- ###
 ### Formulae                                             ###
 ### ---------------------------------------------------- ###
 
-brew "aria2"                                        # multi-protocol & multi-source command-line download utility
-brew "asciinema"                                    # record and share terminal sessions
 brew "bash" 
 brew "bash-completion" 
 brew "bat"                                          # a cat clone with syntax highlighting and git integration
@@ -29,76 +26,37 @@ brew "brew-cask-completion"
 brew "ccat"                                         # colorizing cat  
 brew "clair-scanner"                                # scan local docker images
 brew "cloc"                                         # count lines of code  
-brew "cowsay"                                       # the cow says  
 brew "ctop"                                         # top-like interface for container metrics  
 brew "curl"                                         # curl
 brew "dfc"                                          # displays file system space usage using graphs and colors
-brew "diff-pdf"                                     # visually compare two PDF files
-brew "wagoodman/dive/dive"                          # exploring a docker image, layer contents, and discovering ways to shrink your Docker image size.
-brew "doxygen"                                      # Generate documentation from source code 
-brew "fasd"                                         # quick access to files and directories
-brew "ffmpeg"                                       # record, convert and stream audio and video
 brew "fzf"                                          # a command-line fuzzy finder
-brew "ffmpeg"                                       # to record, convert and stream audio and video 
 brew "go"                                           # golang sdk
-brew "goreleaser/tap/goreleaser"                    # release automation tool for Go projects
 brew "ghq"                                          # git remote repository management made easy
 brew "gibo"                                         # easily accessing gitignore boilerplates
 brew "git"                                          # cli client for git
-brew "git-flow-avh"                                 # git-flow addon for git client
-brew "gitleaks"                                     # audit git repos for secrets
 brew "git-secret"                                   # scan git commits for secrets and credentials
 brew "gnupg"                                        # gpg
 brew "gron"                                         # make JSON greppable!
 brew "htop"                                         # an interactive process viewer for Unix
 brew "httpie"                                       # HTTP command-line client
-brew "hugo"                                         # open-source static site generator
 brew "icdiff"                                       # improved colored diff
-brew "imagemagick"                                  # create, edit, compose, or convert bitmap images
 brew "jenv"                                         # manage your java environment
-brew "jid"                                          # drill down JSON interactively by using filtering queries like jq.
 brew "jq"                                           # command-line JSON processor, like sed
-brew "jo"                                           # small utility to create JSON objects
-brew "joplin"                                       # note taking and to-do application 
-brew "boz/repo/kail"                                # kubernetes log viewer
 brew "kompose"                                      # a conversion tool to go from Docker Compose to Kubernetes
 brew "kubectl"                                      # kubernetes controller
 brew "kubectx"                                      # kubectx: manage and switch between kubectl contexts, kubens: switch between Kubernetes namespaces.
 brew "kubernetes-helm"                              # helm packagemanager for kubernetes
 brew "kubespy"                                      # observing Kubernetes resources in real time
-brew "johanhaleby/kubetail/kubetail"                # tail Kubernetes logs from multiple pods
-brew "jesseduffield/lazydocker/lazydocker"          # the lazier way to manage everything docker
-brew "jesseduffield/lazygit/lazygit"                # simple terminal UI for git commands 
-brew "lf"                                           # file manager for the terminal
-brew "lnav"                                         # watch and analyze your log files from a terminal. 
-brew "lua"                                          # a powerful, efficient, lightweight, embeddable scripting language
 brew "mackup"                                       # keep application settings in sync 
 brew "maven-completion"                   
 brew "mas"                                          # Mac App Store command-line interface
-brew "midnight-commander"                           # visual file manager
-brew "mitmproxy"                                    # a free and open source interactive HTTPS proxy
-brew "mplayer"                                      # UNIX movie player
-brew "ncdu"                                         # a disk usage analyzer with an ncurses interface
-brew "nmap"                                         # port scanning utility for large networks
-brew "nativefier"                                   # Make any web page a desktop application
 brew "node"                                         # node.js
-brew "openshift-cli"                                # openshift cli 
-brew "packer"                                       # package VMs 
-brew "packer-completion" 
 brew "plantuml"                                     # draw UML diagrams
 brew "pip-completion"                   
-brew "potrace"                                      # transforming bitmaps into vector graphics
-brew "pv"                                           # a terminal-based tool for monitoring the progress of data through a pipeline.
 brew "python"                                       # python programming
 brew "reattach-to-user-namespace"                   # Reattach process (e.g., tmux) to background
 brew "rest-shell"                                   # Spring HATEOAS-compliant REST shell
-brew "ripgrep"                                      # recursively searches directories for a regex pattern
-brew "rsync"                                        # provides fast incremental file transfer.
 brew "ruby"                                         # ruby environment
-brew "shellcheck"                                   # a static analysis tool for shell scripts
-brew "ssh-copy-id"                                  # ssh copy 
-brew "stunnel"                                      # SSL tunneling program
-brew "the_silver_searcher"                          # ag a code searching tool similar to ack
 brew "tig"                                          # text-mode interface for git
 brew "tldr"                                         # Simplified and community-driven man pages (https://tldr.sh/)
 brew "tmux"                                         # terminal multiplexer
@@ -106,8 +64,6 @@ brew "tree"                                         # list contents of directori
 brew "vim"                                          # highly configurable text editor
 brew "watch"                                        # execute a program periodically and watch the output
 brew "wget"                                         # non-interactive network downloader
-brew "yarn"                                         # JavaScript package manager
-brew "youtube-dl"                                   # download videos from youtube and many more sites
 brew "zsh"                                          # shell 
 
 ### ---------------------------------------------------- ###
@@ -115,117 +71,35 @@ brew "zsh"                                          # shell
 ### ---------------------------------------------------- ###
 # Note: Casks with version 'latest' will not be updated due to no checksum change
 cask "java"                                         # java 
-cask "adium"                                        # instant messaging
 cask "alfred"                                       # a must have for boost productivity 
-cask "android-sdk"                                  # android sdk
-cask "android-studio"                               # android IDE 
-cask "android-file-transfer"                        # transfer files from Android device 
 cask "arq"                                          # backup for mac
-cask "asciidocfx"                                   # markup editor and pdf,epub, mobi,docbook creator
-cask "atom"                                         # yet another editor
 cask "backuploupe"                                  # browse your timemachine backups
-cask "bartender"                                    # organize your menu bar icons
-cask "bitbar"                                       # put the output from any script or program in your Mac OS X Menu Bar
 cask "brave-browser"                                # privacy focused, performance oriented browser
-cask "calibre"                                      # e-book reader and library management application
-cask "clementine"                                   # music player and radio streamer
-cask "chromium"                                     # open-source browser
-cask "cyberduck"                                    # client for FTP and SFTP, WebDAV, and cloud storage
-cask "dash"                                         # API documentation browser
 cask "dbvisualizer"                                 # universal database tool (skip Java deps, we will use sdkman for Java)
 cask "docker"                                       # docker for mac
 brew "docker-completion"                            # docker completion
 brew "docker-compose-completion"                    # docker compose completion
-brew "docker-machine-completion"                    # docker machine completion
 cask "dropbox"                                      # personal cloud storage service 
-cask "eclipse-java"                                 # eclipse ide for java developers
-cask "balenaetcher"                                 # Burn images to SD cards & USB drives, safely and easily.
-cask "evernote"                                     # taking notes
-cask "expandrive"                                   # map a drive to any cloud
-cask "flux"                                         # get rid of the blue light
-cask "firefox-developer-edition"                    # a browser
-cask "gimp"                                         # an Image Editor (I probably never be able to learn)
 cask "gitkraken"                                    # Git GUI client for Windows, Mac and Linux 
 cask "gitup"                                        # awesome Git Gui Client 
 cask "google-chrome"                                # a browser 
-cask "google-photos-backup-and-sync"                # Google Photos Backup And Sync
 cask "hammerspoon"                                  # powerful automation of MacOS, actions and wm
-cask "handbrake"                                    # open source video transcoder
-cask "horos"                                        # a free, open source medical image viewer
-cask "hyperswitch"                                  # awesome keyboard window switcher for Mac
-cask "icolors"                                      # a color picker and hex converter
-cask "inkscape"                                     # A powerful, free design tool
-cask "insomnia"                                     # superduper rest client
 cask "intellij-idea"                                # awesome java IDE
 cask "iterm2"                                       # Terminal emulator for macOS
-cask "jdiskreport"                                  # analyses your disk drives and shows charts and details tables
-cask "joplin"                                       # a FOSS note taking and to-do application
-cask "karabiner"                                    # keyboard customizer for macOS
 cask "kdiff3"                                       # utility for comparing and merging files and directories
-cask "keepassxc"                                    # a great FOSS Password Manager
-cask "keystore-explorer"                            # open source GUI replacement for the keytool and jarsigner
-cask "keybase"                                      # crypto for everyone!
-cask "keycastr"                                     # keystroke visualizer
-cask "markright"                                    # a markdown editor
-cask "merikan/casks/maconomy"                       # nativefied maconomy
-cask "meld"                                         # visual diff and merge tool
-cask "merikan/casks/messenger"                      # nativefied messenger
 cask "minikube"                                     # kubernetes mini
-cask "minishift"                                    # openshift mini
-cask "moeditor"                                     # all-purpose markdown editor
-cask "obs"                                          # foss for video recording and live streaming
-cask "opera"                                        # browser
-cask "mysqlworkbench"                               # gui tool for mysql 
-cask "paintbrush"                                   # clean and simple paint program
-cask "pencil"                                       # open-source GUI prototyping tool
-cask "phoenix-slides"                               # image viewer
 cask "postman"                                      # nice rest client
 cask "robo-3t"                                      # free lightweight GUI for MongoDB 
-cask "skype"                                        # video conf
-cask "sketch"                                       # sketchapp - design tool
-cask "sketch-toolbox"                               # some useful plugins for sketchapp
-cask "skitch"                                       # take screenshots of all or part of your screen
 cask "sonos"                                        # Sonos controller
-cask "soapui"                                       # soap and rest testing tool
-cask "sonos"                                        # controller for sonos speakers
-cask "sourcetree"                                   # awesome git client 
-cask "spectacle"                                    # move and resize windows
 cask "spotify"                                      # music for everyone
-cask "merikan/casks/sr"                             # nativefied sveriges radio
-cask "sublime-text2"                                # text editor
-cask "thunderbird"                                  # free email application from Mozilla
-cask "tunnelblick"                                  # free, open source graphic user interface for OpenVPN
-cask "vagrant"                                      # vm management
-brew "vagrant-completion"                      
 cask "virtualbox"                                   # virtualizer for x86 hardware
 cask "virtualbox-extension-pack" 
-cask "visual-paradigm-ce"                           # software modelling tool
 cask "visual-studio-code"                           # a great editor
 cask "visualvm"                                     # visual profiling tool for the Java VM
-cask "vlc"                                          # media player
-cask "wavebox"                                      # desktop app for web (gmail)
-cask "xquartz"                                      # X windows on Mac
-cask "yed"                                          # graph editor
 cask "zoomus"                                       # video communications
 
-## quick-look-plugins see:https://github.com/sindresorhus/quick-look-plugins
-cask "qlcolorcode"                                  # preview source code files with syntax highlighting
-cask "qlstephen"                                    # preview plain text files without or with unknown file extension.
-cask "qlmarkdown"                                   # preview Markdown files
-cask "quicklook-json"                               # preview JSON files
-cask "betterzip"                                    # preview archives
-cask "quicklook-csv"                                # preview CSV files
-cask "qlimagesize"                                  # display image size and resolution
-cask "webpquicklook"                                # preview WebP images
-cask "suspicious-package"                           # preview the contents of a standard Apple installer package
-cask "qlvideo"                                      # display thumbnails, static previews, cover art and metadata for video files
 ## -- fonts                     
 cask "font-fira-code"                               # monospaced font with programming ligatures
-cask "font-go-mono"                                 # golang fonts   
-cask "font-hasklig"                                 # a code font with monospaced ligatures
-cask "font-inconsolata"                             # a great programmers font
-cask "font-monoid"                                  # a ppen source coding font with ligatures
-cask "font-monoisome"                               # monoid with Font Awesome support
 
 ### ---------------------------------------------------- ###
 ### Mac App Store command line interface                 ###
@@ -234,14 +108,9 @@ cask "font-monoisome"                               # monoid with Font Awesome s
 
 mas "Bredbandskollen", id: 1147976909
 mas "Keynote", id: 409183694
-mas "Kindle", id: 405399194
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "Pocket", id: 568494494
 mas "Slack", id: 803453959
 mas "The Archive Browser", id: 510232205
 mas "The Unarchiver", id: 425424353
-mas "Tomato One", id: 907364780
-mas "Twitter", id: 409789998
-mas "Microsoft To Do", id: 1274495053
 

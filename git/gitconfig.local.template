@@ -3,8 +3,8 @@
 
 
 [user]
-  name = Peter Merikan
-  email = peter@merikan.com
+  name = Anders Asplund
+  email = aasplund@hotmail.com
 
 [credential]
   helper = osxkeychain

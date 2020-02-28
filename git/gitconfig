@@ -5,9 +5,9 @@
   path = ~/.gitconfig.local
 
 [user]
-	name = Peter Merikan
-	email = peter@merikan.com
-	signingkey = A93D728B0D0028A71C47EB106F86D20024CE1D22
+	name = Anders Asplund
+	email = aasplund@hotmail.com
+	# signingkey = 
 
 [core]
 	excludesfile = ~/.gitignore_global
